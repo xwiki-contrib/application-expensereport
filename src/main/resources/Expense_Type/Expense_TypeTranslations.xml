@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>Expense_Type</web>
+  <name>Expense_TypeTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>Expense_TypeClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1405683715000</creationDate>
+  <date>1405686587000</date>
+  <contentUpdateDate>1405686587000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>Expense_Type.Expense_TypeTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>2fd70812-8fe2-48ed-ba78-e30586e05e42</guid>
+    <property>
+      <scope>ON_DEMAND</scope>
+    </property>
+  </object>
+  <content># Class fields
+Expense_Type.Expense_TypeClass_label=label
+Expense_Type.create=Ajouter un type de dépense
+
+# Live table generic keys
+expense_type.livetable.doc.title=Titre de la page
+expense_type.livetable.doc.name=Nom de la page
+expense_type.livetable.doc.space=Espace
+expense_type.livetable.doc.fullname=Nom complet de la page
+expense_type.livetable.doc.author=Dernier auteur
+expense_type.livetable.doc.creator=Créateur
+expense_type.livetable.doc.date=Date de dernière mise à jour
+expense_type.livetable.doc.creationDate=Date de création
+expense_type.livetable._avatar=Avatar
+expense_type.livetable._images=Images
+expense_type.livetable._attachments=Pièces jointes
+expense_type.livetable._actions=Actions
+expense_type.livetable._actions.edit=Éditer
+expense_type.livetable._actions.delete=Supprimer
+expense_type.livetable.emptyvalue=-
+
+# Live table specific keys
+expense_type.livetable.label=label</content>
+</xwikidoc>

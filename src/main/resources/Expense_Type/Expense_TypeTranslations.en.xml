@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>Expense_Type</web>
+  <name>Expense_TypeTranslations</name>
+  <language>en</language>
+  <defaultLanguage/>
+  <translation>1</translation>
+  <parent>Expense_Type.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1405686611000</creationDate>
+  <date>1405956923000</date>
+  <contentUpdateDate>1405686611000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content># Class fields
+Expense_Type.Expense_TypeClass_label=label
+Expense_Type.create=Add an expense type
+
+# Live table generic keys
+expense_type.livetable.doc.title=Titre de la page
+expense_type.livetable.doc.name=Nom de la page
+expense_type.livetable.doc.space=Espace
+expense_type.livetable.doc.fullname=Nom complet de la page
+expense_type.livetable.doc.author=Dernier auteur
+expense_type.livetable.doc.creator=Créateur
+expense_type.livetable.doc.date=Date de dernière mise à jour
+expense_type.livetable.doc.creationDate=Date de création
+expense_type.livetable._avatar=Avatar
+expense_type.livetable._images=Images
+expense_type.livetable._attachments=Pièces jointes
+expense_type.livetable._actions=Actions
+expense_type.livetable._actions.edit=Éditer
+expense_type.livetable._actions.delete=Supprimer
+expense_type.livetable.emptyvalue=-
+
+# Live table specific keys
+expense_type.livetable.label=label</content>
+</xwikidoc>
