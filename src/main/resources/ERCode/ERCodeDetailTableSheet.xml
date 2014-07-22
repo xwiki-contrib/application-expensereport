@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>ERCode</web>
+  <name>ERCodeDetailTableSheet</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>ERCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1405519523000</creationDate>
+  <date>1405958546000</date>
+  <contentUpdateDate>1405612122000</contentUpdateDate>
+  <version>1.1</version>
+  <title>ERCodeDetailSheet</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content>
+{{velocity}}
+
+(% id="detailTable" %)
+|=$services.localization.render("ERCode.detail.date")##
+|=$services.localization.render("ERCode.detail.description")##
+|=$services.localization.render("ERCode.detail.type")##
+|=$services.localization.render("ERCode.detail.amount_local")##
+|=$services.localization.render("ERCode.detail.exchange_rate")##
+|=$services.localization.render("ERCode.detail.vat_rate")##
+|=$services.localization.render("ERCode.detail.amount_euro")##
+|=$services.localization.render("ERCode.detail.vat_euro")#if($xcontext.action == "edit")|= $services.localization.render("ercode.livetable._actions") #end
+#foreach($detail in $doc.getObjects('ERCode.ERCodeDetailClass'))
+
+  |$doc.display('date', $detail)##
+  |$doc.display('description', $detail)##
+  |$doc.display('type', $detail)##
+  |$doc.display('amount_local', $detail)##
+  |$doc.display('exchange_rate', $detail)##
+  |$doc.display('vat_rate', $detail)##
+  |$doc.display('amount_euro', $detail)##
+  |$doc.display('vat_euro', $detail)#if($xcontext.action == "edit")##
+  |(% class="xobject-action delete" data-id="$detail.number" %)((([[$services.localization.render("ercode.livetable._actions.delete")&gt;&gt;path:#]])))#end
+#end
+
+
+{{/velocity}}
+</content>
+</xwikidoc>
