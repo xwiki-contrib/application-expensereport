@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>ERCode</web>
+  <name>ERCodeTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>ERCodeClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1405504553000</creationDate>
+  <date>1405688235000</date>
+  <contentUpdateDate>1405528644000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>ERCode.ERCodeTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>9c7c2e8e-c39f-45fa-ac9f-f86d5c9885bf</guid>
+    <property>
+      <scope>WIKI</scope>
+    </property>
+  </object>
+  <content>ERCode.title.report=Note de frais n°
+ERCode.export=Exporter la note de frais
+ERCode.create.report=Ajouter une note de frais
+
+ERCode.pdf.employee_signature=Signature de l'employé
+ERCode.pdf.manager_signature=Signature du manager
+
+# Class fields
+ERCode.ERCodeClass_label=Label
+ERCode.ERCodeClass_user=Utilisateur
+ERCode.ERCodeClass_organisation=Organisation
+ERCode.ERCodeClass_payment_month=Mois de paiement
+ERCode.ERCodeClass_payment_year=Année de paiement
+ERCode.ERCodeClass_bill_date=Date de facturation
+ERCode.ERCodeClass_client=Client
+ERCode.ERCodeClass_amount=Montant
+ERCode.ERCodeClass_vat=TVA
+ERCode.ERCodeClass_currency=Monnaie
+ERCode.ERCodeClass_status=status
+ERCode.ERCodeClass_status_3=Refusé
+ERCode.ERCodeClass_status_2=Payé
+ERCode.ERCodeClass_status_1=En cours
+ERCode.ERCodeClass_status_4=Annulé
+ERCode.ERCodeClass_details=Details
+ERCode.ERCodeClass_index=Index
+
+ERCode.ERCodeClass_payment_month_a=Janvier
+ERCode.ERCodeClass_payment_month_b=Février
+ERCode.ERCodeClass_payment_month_c=Mars
+ERCode.ERCodeClass_payment_month_d=Avril
+ERCode.ERCodeClass_payment_month_e=Mai
+ERCode.ERCodeClass_payment_month_f=Juin
+ERCode.ERCodeClass_payment_month_g=Juillet
+ERCode.ERCodeClass_payment_month_h=Août
+ERCode.ERCodeClass_payment_month_i=Septembre
+ERCode.ERCodeClass_payment_month_j=Octobre
+ERCode.ERCodeClass_payment_month_k=Novembre
+ERCode.ERCodeClass_payment_month_l=Décembre
+
+# Live table generic keys
+ercode.livetable.doc.title=Titre de la page
+ercode.livetable.doc.name=Nom de la page
+ercode.livetable.doc.space=Espace
+ercode.livetable.doc.fullname=Nom complet de la page
+ercode.livetable.doc.author=Dernier auteur
+ercode.livetable.doc.creator=Créateur
+ercode.livetable.doc.date=Date de dernière mise à jour
+ercode.livetable.doc.creationDate=Date de création
+ercode.livetable._avatar=Avatar
+ercode.livetable._images=Images
+ercode.livetable._attachments=Pièces jointes
+ercode.livetable._actions=Actions
+ercode.livetable._actions.edit=Éditer
+ercode.livetable._actions.delete=Supprimer
+ercode.livetable.emptyvalue=-
+
+ERCode.detail.date=Date
+ERCode.detail.description=Description
+ERCode.detail.amount_local=Montant (avec taxes)
+ERCode.detail.exchange_rate=Taux de change
+ERCode.detail.vat_rate=TVA
+ERCode.detail.amount_euro=Montant (avec taxes - en €)
+ERCode.detail.vat_euro=Montant TVA (en €)
+
+# Live table specific keys
+ercode.livetable.label=Label
+ercode.livetable.user=User
+ercode.livetable.bill_date=Date de facturation
+ercode.livetable.client=Client
+ercode.livetable.amount=Montant
+ercode.livetable.vat=TVA
+ercode.livetable.currency=Monnaie
+ercode.livetable.status=status
+ercode.livetable.details=Details
+ercode.livetable.index=Index
+ercode.livetable.payment_month=Mois de paiement
+ercode.livetable.organisation=Organisation</content>
+</xwikidoc>
