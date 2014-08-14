@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1405504553000</creationDate>
-  <date>1405688235000</date>
-  <contentUpdateDate>1405528644000</contentUpdateDate>
+  <creationDate>1408012674000</creationDate>
+  <date>1408012921000</date>
+  <contentUpdateDate>1408012921000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -57,81 +57,100 @@
       <scope>WIKI</scope>
     </property>
   </object>
-  <content>ERCode.title.report=Note de frais n°
-ERCode.export=Exporter la note de frais
-ERCode.create.report=Ajouter une note de frais
+  <content>ERCode.Space.title=Expense report manager
 
-ERCode.pdf.employee_signature=Signature de l'employé
-ERCode.pdf.manager_signature=Signature du manager
+ERCode.title.report=Expense report #
+ERCode.export=Export this expense report
+ERCode.create.report=Add a new expense report
+
+ERCode.pdf.employee_signature=Employee signature
+ERCode.pdf.manager_signature=Manager signature
+
+ERCode.expense_report=Expense report
+
+ERCode.help.main=Expense report requires you to set the Organisation and Expense type applications so as to get a better user experience.
+ERCode.help.organisations=Set your organisations in the app and add the organisation field to the user's profile.\nThe company and the currency of each expense report will be filled automatically\n
+ERCode.help.type=Add expense types helps you to manage better your expenses by sorting them by category.\n
+ERCode.help.team=Also add teams to have a new way to sort your expenses.\n
 
 # Class fields
 ERCode.ERCodeClass_label=Label
-ERCode.ERCodeClass_user=Utilisateur
+ERCode.ERCodeClass_user=Employee
 ERCode.ERCodeClass_organisation=Organisation
-ERCode.ERCodeClass_payment_month=Mois de paiement
-ERCode.ERCodeClass_payment_year=Année de paiement
-ERCode.ERCodeClass_bill_date=Date de facturation
+ERCode.ERCodeClass_payment_month=Payment month
+ERCode.ERCodeClass_payment_year=Payment year
+ERCode.ERCodeClass_payment_period=Payment date
+ERCode.ERCodeClass_bill_date=Bill date
 ERCode.ERCodeClass_client=Client
-ERCode.ERCodeClass_amount=Montant
-ERCode.ERCodeClass_vat=TVA
-ERCode.ERCodeClass_currency=Monnaie
-ERCode.ERCodeClass_status=status
-ERCode.ERCodeClass_status_3=Refusé
-ERCode.ERCodeClass_status_2=Payé
-ERCode.ERCodeClass_status_1=En cours
-ERCode.ERCodeClass_status_4=Annulé
+ERCode.ERCodeClass_amount=Amount
+ERCode.ERCodeClass_vat=VAT
+ERCode.ERCodeClass_total=Amount
+ERCode.ERCodeClass_total_VAT=VAT
+ERCode.ERCodeClass_currency=Currency
+ERCode.ERCodeClass_status=Status
+ERCode.ERCodeClass_status_3=Denied
+ERCode.ERCodeClass_status_2=Payed
+ERCode.ERCodeClass_status_1=In progress
+ERCode.ERCodeClass_status_4=Canceled
 ERCode.ERCodeClass_details=Details
 ERCode.ERCodeClass_index=Index
+ERCode.ERCodeClass_team=Team
 
-ERCode.ERCodeClass_payment_month_a=Janvier
-ERCode.ERCodeClass_payment_month_b=Février
-ERCode.ERCodeClass_payment_month_c=Mars
-ERCode.ERCodeClass_payment_month_d=Avril
-ERCode.ERCodeClass_payment_month_e=Mai
-ERCode.ERCodeClass_payment_month_f=Juin
-ERCode.ERCodeClass_payment_month_g=Juillet
-ERCode.ERCodeClass_payment_month_h=Août
-ERCode.ERCodeClass_payment_month_i=Septembre
-ERCode.ERCodeClass_payment_month_j=Octobre
-ERCode.ERCodeClass_payment_month_k=Novembre
-ERCode.ERCodeClass_payment_month_l=Décembre
+ERCode.ERCodeClass_payment_month_a=January
+ERCode.ERCodeClass_payment_month_b=February
+ERCode.ERCodeClass_payment_month_c=March
+ERCode.ERCodeClass_payment_month_d=April
+ERCode.ERCodeClass_payment_month_e=May
+ERCode.ERCodeClass_payment_month_f=June
+ERCode.ERCodeClass_payment_month_g=July
+ERCode.ERCodeClass_payment_month_h=August
+ERCode.ERCodeClass_payment_month_i=September
+ERCode.ERCodeClass_payment_month_j=October
+ERCode.ERCodeClass_payment_month_k=November
+ERCode.ERCodeClass_payment_month_l=Décember
 
 # Live table generic keys
-ercode.livetable.doc.title=Titre de la page
-ercode.livetable.doc.name=Nom de la page
-ercode.livetable.doc.space=Espace
-ercode.livetable.doc.fullname=Nom complet de la page
-ercode.livetable.doc.author=Dernier auteur
-ercode.livetable.doc.creator=Créateur
-ercode.livetable.doc.date=Date de dernière mise à jour
-ercode.livetable.doc.creationDate=Date de création
+ercode.livetable.doc.title=Page title
+ercode.livetable.doc.name=Page name
+ercode.livetable.doc.space=Space
+ercode.livetable.doc.fullname=Fullname
+ercode.livetable.doc.author=Last author
+ercode.livetable.doc.creator=Creator
+ercode.livetable.doc.date=Last update
+ercode.livetable.doc.creationDate=Creation date
 ercode.livetable._avatar=Avatar
 ercode.livetable._images=Images
-ercode.livetable._attachments=Pièces jointes
+ercode.livetable._attachments=Attachment
 ercode.livetable._actions=Actions
-ercode.livetable._actions.edit=Éditer
-ercode.livetable._actions.delete=Supprimer
+ercode.livetable._actions.edit=Edit
+ercode.livetable._actions.delete=Delete
 ercode.livetable.emptyvalue=-
 
+ERCode.detail.add=Add a detail
 ERCode.detail.date=Date
 ERCode.detail.description=Description
-ERCode.detail.amount_local=Montant (avec taxes)
-ERCode.detail.exchange_rate=Taux de change
-ERCode.detail.vat_rate=TVA
-ERCode.detail.amount_euro=Montant (avec taxes - en €)
-ERCode.detail.vat_euro=Montant TVA (en €)
+ERCode.detail.amount_local=Amount (with taxes)
+ERCode.detail.exchange_rate=Exchange rate
+ERCode.detail.vat_rate=VAT rate
+ERCode.detail.amount_euro=Amount (with taxes - in €)
+ERCode.detail.vat_euro=VAT amount (in €)
+ERCode.detail.type=Type
 
 # Live table specific keys
 ercode.livetable.label=Label
-ercode.livetable.user=User
-ercode.livetable.bill_date=Date de facturation
+ercode.livetable.user=Employee
+ercode.livetable.bill_date=Bill date
 ercode.livetable.client=Client
-ercode.livetable.amount=Montant
-ercode.livetable.vat=TVA
-ercode.livetable.currency=Monnaie
-ercode.livetable.status=status
+ercode.livetable.amount=Amount
+ercode.livetable.vat=VAT
+ercode.livetable.total=Amount
+ercode.livetable.total_VAT=VAT
+ercode.livetable.currency=Currency
+ercode.livetable.status=Status
 ercode.livetable.details=Details
 ercode.livetable.index=Index
-ercode.livetable.payment_month=Mois de paiement
-ercode.livetable.organisation=Organisation</content>
+ercode.livetable.payment_month=Payment month
+ercode.livetable.payment_period=Payment date
+ercode.livetable.organisation=Organisation
+ercode.livetable.team=Team</content>
 </xwikidoc>

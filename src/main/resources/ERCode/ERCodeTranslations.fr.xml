@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1405528677000</creationDate>
-  <date>1405958573000</date>
-  <contentUpdateDate>1405952475000</contentUpdateDate>
+  <creationDate>1408012674000</creationDate>
+  <date>1408010245000</date>
+  <contentUpdateDate>1408010245000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -36,6 +36,7 @@ ERCode.expense_report=Note de frais
 ERCode.help.main=Expense report nécessite de paramétrer les applications Organisation et Expense type pour une meilleure utilisation.
 ERCode.help.organisations=Déclarez vos organisations dans l'application et ajoutez un champ organisation aux profils de vos utilisateurs.\nLa compagnie ainsi que la monnaie de chaque note de frais sera renseignée automatiquement.\n
 ERCode.help.type=Ajouter des types de dépense vous permettra une meilleure gestion de vos frais en les classant par catégorie\n
+ERCode.help.team=Ajoutez également des équipes pour permettre un autre tri de vos frais\n
 
 # Class fields
 ERCode.ERCodeClass_label=Label
@@ -43,18 +44,22 @@ ERCode.ERCodeClass_user=Demandeur
 ERCode.ERCodeClass_organisation=Organisation
 ERCode.ERCodeClass_payment_month=Mois de paiement
 ERCode.ERCodeClass_payment_year=Année de paiement
+ERCode.ERCodeClass_payment_period=Date de paiement
 ERCode.ERCodeClass_bill_date=Date de facturation
 ERCode.ERCodeClass_client=Client
 ERCode.ERCodeClass_amount=Montant
+ERCode.ERCodeClass_total=Montant
 ERCode.ERCodeClass_vat=TVA
+ERCode.ERCodeClass_total_VAT=TVA
 ERCode.ERCodeClass_currency=Monnaie
-ERCode.ERCodeClass_status=status
+ERCode.ERCodeClass_status=Status
 ERCode.ERCodeClass_status_3=Refusé
 ERCode.ERCodeClass_status_2=Payé
 ERCode.ERCodeClass_status_1=En cours
 ERCode.ERCodeClass_status_4=Annulé
 ERCode.ERCodeClass_details=Details
 ERCode.ERCodeClass_index=Index
+ERCode.ERCodeClass_team=Equipe
 
 ERCode.ERCodeClass_payment_month_a=Janvier
 ERCode.ERCodeClass_payment_month_b=Février
@@ -103,10 +108,14 @@ ercode.livetable.bill_date=Date de facturation
 ercode.livetable.client=Client
 ercode.livetable.amount=Montant
 ercode.livetable.vat=TVA
+ercode.livetable.total=Montant
+ercode.livetable.total_VAT=TVA
 ercode.livetable.currency=Monnaie
-ercode.livetable.status=status
+ercode.livetable.status=Status
 ercode.livetable.details=Details
 ercode.livetable.index=Index
 ercode.livetable.payment_month=Mois de paiement
-ercode.livetable.organisation=Organisation</content>
+ercode.livetable.payment_period=Date de paiement
+ercode.livetable.organisation=Organisation
+ercode.livetable.team=Equipe</content>
 </xwikidoc>
