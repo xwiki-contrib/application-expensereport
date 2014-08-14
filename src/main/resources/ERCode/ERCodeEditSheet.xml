@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1405504691000</creationDate>
-  <date>1406033538000</date>
-  <contentUpdateDate>1405604968000</contentUpdateDate>
+  <creationDate>1407942174000</creationDate>
+  <date>1408009358000</date>
+  <contentUpdateDate>1408009358000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -186,6 +186,11 @@ $(function(){
     ; &lt;label for="ERCode.ERCodeClass_0_organisation"&gt;$escapetool.xml($doc.displayPrettyName('organisation', false, false))&lt;/label&gt;
     : $doc.display('organisation')
   )))
+
+  (% class="column half" %)(((
+    ; &lt;label for="ERCode.ERCodeClass_0_team"&gt;$escapetool.xml($doc.displayPrettyName('team', false, false))&lt;/label&gt;
+    : $doc.display('team')
+  )))
   
   (% class="clearfloats" %)((()))
       
@@ -202,38 +207,34 @@ $(function(){
   (% class="clearfloats" %)((()))
 
   (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_payment_month"&gt;$escapetool.xml($doc.displayPrettyName('payment_month', false, false))&lt;/label&gt;
-    : $doc.display('payment_month')
-  )))
-  
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_payment_year"&gt;$escapetool.xml($doc.displayPrettyName('payment_year', false, false))&lt;/label&gt;
-    : $doc.display('payment_year')
-  )))
-
-  (% class="clearfloats" %)((()))
-
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_amount"&gt;$escapetool.xml($doc.displayPrettyName('amount', false, false))&lt;/label&gt;
-    : $doc.display('amount')
+    ; &lt;label for="ERCode.ERCodeClass_0_total"&gt;$escapetool.xml($doc.displayPrettyName('total', false, false))&lt;/label&gt;
+    : $doc.display('total')
   )))
    
-   (% class="column third" %)(((
-      ; &lt;label for="ERCode.ERCodeClass_0_vat"&gt;$escapetool.xml($doc.displayPrettyName('vat', false, false))&lt;/label&gt;
-      : $doc.display('vat')
-   )))
-   
+  (% class="column third" %)(((
+    ; &lt;label for="ERCode.ERCodeClass_0_total_VAT"&gt;$escapetool.xml($doc.displayPrettyName('total_VAT', false, false))&lt;/label&gt;
+    : $doc.display('total_VAT')
+  )))
+
   (% class="column third" %)(((
     ; &lt;label for="ERCode.ERCodeClass_0_currency"&gt;$escapetool.xml($doc.displayPrettyName('currency', false, false))&lt;/label&gt;
     : $doc.display('currency')
   )))
-  
+
+
   (% class="clearfloats" %)((()))
+
 
   (% class="column third" %)(((
     ; &lt;label for="ERCode.ERCodeClass_0_status"&gt;$escapetool.xml($doc.displayPrettyName('status', false, false))&lt;/label&gt;
     : $doc.display('status')
   )))
+
+  (% class="column third" %)(((
+    ; &lt;label for="ERCode.ERCodeClass_0_payment_period"&gt;$escapetool.xml($doc.displayPrettyName('payment_period', false, false))&lt;/label&gt;
+    : $doc.display('payment_period')
+  )))
+
 
   (% class="clearfloats" %)((()))
 
