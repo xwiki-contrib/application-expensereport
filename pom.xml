@@ -44,6 +44,9 @@
       <id>abocquet</id>
       <name>Adrien Bocquet</name>
     </developer>
+    <developer>
+      <name>Yann Flory</name>
+    </developer>
   </developers>
   <properties>
     <!-- Don't run CLIRR here since there's no Java code. -->
