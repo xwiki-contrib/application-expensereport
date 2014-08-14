@@ -177,14 +177,14 @@
 #end
 #if("$!doc.user" != "")
   {{html wiki="true" clean="false"}}
-    **&lt;label for="ERCode.ERCodeClass_0_user"&gt;$stringtool.capitalize($escapetool.xml($doc.displayPrettyName('user', false, false)))&lt;/label&gt; :**$doc.display('user')
+    **&lt;label for="ERCode.ERCodeClass_0_user"&gt;$stringtool.capitalize($escapetool.xml($doc.displayPrettyName('user', false, false)))&lt;/label&gt; : **$doc.display('user')
   {{/html}}
   
   
 #end
 #if("$!doc.bill_date" != "")
   {{html wiki="true" clean="false"}}
-    **&lt;label for="ERCode.ERCodeClass_0_bill_date"&gt;$stringtool.capitalize($escapetool.xml($doc.displayPrettyName('bill_date', false, false)))&lt;/label&gt; :**$doc.display('bill_date')
+    **&lt;label for="ERCode.ERCodeClass_0_bill_date"&gt;$stringtool.capitalize($escapetool.xml($doc.displayPrettyName('bill_date', false, false)))&lt;/label&gt; : **$doc.display('bill_date')
   {{/html}}
   
   
