@@ -52,5 +52,6 @@
 })
 #set ($columns = ['doc.name', 'doc.date', 'doc.author', '_actions'])
 #livetable('expense_type' $columns $columnsProperties $options)
+#set($docextras=[])
 {{/velocity}}</content>
 </xwikidoc>
