@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc version="1.1">
   <web>Expense_Type</web>
   <name>WebHome</name>
   <language>en</language>
   <defaultLanguage/>
   <translation>1</translation>
-  <parent>ExpenseReport.WebHome</parent>
   <creator>xwiki:XWiki.Admin</creator>
+  <parent>ExpenseReport.WebHome</parent>
   <author>xwiki:XWiki.Admin</author>
-  <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1405956967000</creationDate>
   <date>1405956988000</date>
   <contentUpdateDate>1405956967000</contentUpdateDate>
   <version>1.1</version>
   <title>Expense Type</title>
-  <defaultTemplate/>
-  <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.0</syntaxId>
