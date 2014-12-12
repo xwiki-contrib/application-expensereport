@@ -25,6 +25,8 @@
   <content>
 
 {{include reference="ERCode.WebHome" /}}
-
+{{velocity}}
+#set($docextras=[])
+{{/velocity}}
 </content>
 </xwikidoc>
