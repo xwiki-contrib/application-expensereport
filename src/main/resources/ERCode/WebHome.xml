@@ -67,6 +67,7 @@
 })
 #set ($columns = ['label', 'bill_date', 'payment_period' , 'total' , 'total_VAT' , 'currency' , 'user', 'organisation' , 'status' , 'doc.date', "_actions" ])
 #livetable('ercode' $columns $columnsProperties $options)
+#set($docextras=[])
 {{/velocity}}</content>
   <attachment>
     <filename>logo.jpg</filename>
