@@ -57,7 +57,8 @@
       <scope>WIKI</scope>
     </property>
   </object>
-  <content>ERCode.Space.title=Expense report manager
+  <content>ERCode.app.title=Expense Report
+ERCode.Space.title=Expense report manager
 
 ERCode.title.report=Expense report #
 ERCode.export=Export this expense report
