@@ -157,7 +157,7 @@
       <name>platform.panels.ERCodeApplication</name>
     </property>
     <property>
-      <parameters>label=Expense report
+      <parameters>label=$services.localization.render('ERCode.app.title')
 target=ExpenseReport.WebHome
 icon=icon:money</parameters>
     </property>
