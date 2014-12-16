@@ -35,7 +35,10 @@
 #end
 
 #if (!$isGuest)
-  [[$services.localization.render("ERCode.create.report")&gt;&gt;ERCode.Create]]
+  (% class='pull-right buttonwrapper' %)
+  (((
+    [[$services.icon.render('add') $services.localization.render('ERCode.create.report')&gt;&gt;ERCode.Create||class='btn btn-success button']]
+  )))
 #end
 
 #set ($discard = $xwiki.ssfx.use('uicomponents/widgets/userpicker/userPicker.css'))

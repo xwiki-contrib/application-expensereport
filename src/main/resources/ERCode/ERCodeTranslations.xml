@@ -62,7 +62,7 @@ ERCode.Space.title=Expense report manager
 
 ERCode.title.report=Expense report #
 ERCode.export=Export this expense report
-ERCode.create.report=Add a new expense report
+ERCode.create.report=Add report
 
 ERCode.pdf.employee_signature=Employee signature
 ERCode.pdf.manager_signature=Manager signature
