@@ -35,9 +35,9 @@
 #end
 
 #if (!$isGuest)
-  (% class='pull-right' %)
+  (% class='pull-right buttonwrapper' %)
   (((
-    [[$services.icon.render('add') $services.localization.render('ERCode.create.report')&gt;&gt;ERCode.Create||class='btn btn-success']]
+    [[$services.icon.render('add') $services.localization.render('ERCode.create.report')&gt;&gt;ERCode.Create||class='btn btn-success button']]
   )))
 #end
 
