@@ -238,12 +238,12 @@ $(function(){
 
   (% class="clearfloats" %)((()))
 
-)))
 
 {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
 
 (% class="buttonwrapper" id="add_detail" %)(((
   [[$services.localization.render("ERCode.detail.add")&gt;&gt;path:#]]
+)))
 )))
 
 {{/html}}
