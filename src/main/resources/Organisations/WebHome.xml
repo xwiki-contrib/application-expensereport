@@ -25,7 +25,7 @@
 You can add the organisation property as a database list in users profile so as to use it into the expense report app
 
 #set ($columnsProperties = {
-  'doc.title': {"type":"text","size":20,"link":"view"},
+  'name': {"type":"text","size":20,"link":"view"},
   'doc.date': {"type":"text","size":10},
   'doc.author': {"type":"text","size":10,"link":"author"},
   '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
@@ -37,10 +37,10 @@ You can add the organisation property as a database list in users profile so as 
   'tagCloud': true,
   'rowCount': 15,
   'maxPages': 10,
-  'selectedColumn': 'doc.title',
+  'selectedColumn': 'name',
   'defaultOrder': 'asc'
 })
-#set ($columns = ['doc.title', 'doc.date', 'doc.author', '_actions'])
+#set ($columns = ['name', 'doc.date', 'doc.author', '_actions'])
 #livetable('organisations' $columns $columnsProperties $options)
 {{/velocity}}</content>
   <object>
