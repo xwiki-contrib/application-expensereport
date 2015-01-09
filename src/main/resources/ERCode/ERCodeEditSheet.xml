@@ -1,172 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc version="1.1">
   <web>ERCode</web>
   <name>ERCodeEditSheet</name>
   <language/>
   <defaultLanguage/>
   <translation>0</translation>
-  <parent>ERCode.WebHome</parent>
   <creator>xwiki:XWiki.Admin</creator>
+  <parent>ERCode.WebHome</parent>
   <author>xwiki:XWiki.Admin</author>
-  <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1407942174000</creationDate>
   <date>1408009358000</date>
   <contentUpdateDate>1408009358000</contentUpdateDate>
   <version>1.1</version>
   <title/>
-  <defaultTemplate/>
-  <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
-  <object>
-    <class>
-      <name>XWiki.JavaScriptExtension</name>
-      <customClass/>
-      <customMapping/>
-      <defaultViewSheet/>
-      <defaultEditSheet/>
-      <defaultWeb/>
-      <nameField/>
-      <validationScript/>
-      <cache>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>cache</name>
-        <number>5</number>
-        <prettyName>Caching policy</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>long|short|default|forbid</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </cache>
-      <code>
-        <disabled>0</disabled>
-        <name>code</name>
-        <number>2</number>
-        <prettyName>Code</prettyName>
-        <rows>20</rows>
-        <size>50</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </code>
-      <name>
-        <disabled>0</disabled>
-        <name>name</name>
-        <number>1</number>
-        <prettyName>Name</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </name>
-      <parse>
-        <disabled>0</disabled>
-        <displayFormType>select</displayFormType>
-        <displayType>yesno</displayType>
-        <name>parse</name>
-        <number>4</number>
-        <prettyName>Parse content</prettyName>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-      </parse>
-      <use>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>use</name>
-        <number>3</number>
-        <prettyName>Use this extension</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </use>
-    </class>
-    <name>ERCode.ERCodeEditSheet</name>
-    <number>0</number>
-    <className>XWiki.JavaScriptExtension</className>
-    <guid>86e3966c-1f66-401f-9ca7-bad8d59786c4</guid>
-    <property>
-      <cache>default</cache>
-    </property>
-    <property>
-      <code>require(['jquery'], function ($) {
-$(function(){
-  var page = $('meta[name="page"]').attr('content'),
-      namespace = $('meta[name="restURL"]').attr('content') + "/objects/",
-      $detailTable = $('#detailTable')
-  ;
-
-  function loadDetailFor(page, objectNumber){
-    var url = "/xwiki/bin/view/ERCode/ERCodeDetailSheet?page=ExpenseReport." + page + "&amp;number=" + objectNumber + "&amp;xpage=plain" ;
-    $.ajax(url).success(function(res){
-      var $res = $(res).find('tr').appendTo($detailTable).find('.datetime');
-      
-      var dpicker = new XWiki.DateTimePicker($res[0], $res[0].title);
-    })
-  }
-
-  $('#add_detail').click(function(e){
-
-    e.preventDefault();
-
-    $.ajax({
-      url: namespace,
-      type: "POST",
-      contentType: "application/x-www-form-urlencoded",
-      accept: "application/xml",
-      data: "className=ERCode.ERCodeDetailClass",
-    }).success(function(res){
-
-      var objectNumber = $(res).find('number').text();
-      loadDetailFor(page, objectNumber);
-
-    });
-
-  });
-
-  $(document).on("click", ".xobject-action.delete", function(e){
-    e.preventDefault();
-
-    var $parent = $(this).closest('tr');
-    var id = $(this).attr('data-id');
-
-    $.ajax({
-      url: namespace + "ERCode.ERCodeDetailClass/" + id + "?method=DELETE",
-      type: 'DELETE'
-    }).success(function(){
-      $parent.remove();
-    })
-
-  });
-
-  $('.fullScreenEditLinkContainer').remove();
-
-});
-});</code>
-    </property>
-    <property>
-      <name>main</name>
-    </property>
-    <property>
-      <parse>0</parse>
-    </property>
-    <property>
-      <use>onDemand</use>
-    </property>
-  </object>
   <content>{{velocity}}
 {{html wiki="true" clean="false"}}
 
@@ -248,4 +100,149 @@ $(function(){
 
 {{/html}}
 {{/velocity}}</content>
+  <object>
+    <name>ERCode.ERCodeEditSheet</name>
+    <number>0</number>
+    <className>XWiki.JavaScriptExtension</className>
+    <guid>86e3966c-1f66-401f-9ca7-bad8d59786c4</guid>
+    <class>
+      <name>XWiki.JavaScriptExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <property>
+      <cache>default</cache>
+    </property>
+    <property>
+      <code>require(['jquery'], function ($) {
+$(function(){
+  var page = $('meta[name="page"]').attr('content'),
+      namespace = $('meta[name="restURL"]').attr('content') + "/objects/",
+      $detailTable = $('#detailTable')
+  ;
+
+  function loadDetailFor(page, objectNumber){
+    var url = "/xwiki/bin/view/ERCode/ERCodeDetailSheet?page=ExpenseReport." + page + "&amp;number=" + objectNumber + "&amp;xpage=plain" ;
+    $.ajax(url).success(function(res){
+      var $res = $(res).find('tr').appendTo($detailTable).find('.datetime');
+      
+      var dpicker = new XWiki.DateTimePicker($res[0], $res[0].title);
+    })
+  }
+
+  $('#add_detail').click(function(e){
+
+    e.preventDefault();
+
+    $.ajax({
+      url: namespace,
+      type: "POST",
+      contentType: "application/x-www-form-urlencoded",
+      accept: "application/xml",
+      data: "className=ERCode.ERCodeDetailClass",
+    }).success(function(res){
+
+      var objectNumber = $(res).find('number').text();
+      loadDetailFor(page, objectNumber);
+
+    });
+
+  });
+
+  $(document).on("click", ".xobject-action.delete", function(e){
+    e.preventDefault();
+
+    var $parent = $(this).closest('tr');
+    var id = $(this).attr('data-id');
+
+    $.ajax({
+      url: namespace + "ERCode.ERCodeDetailClass/" + id + "?method=DELETE",
+      type: 'DELETE'
+    }).success(function(){
+      $parent.remove();
+    })
+
+  });
+
+  $('.fullScreenEditLinkContainer').remove();
+
+});
+});</code>
+    </property>
+    <property>
+      <name>main</name>
+    </property>
+    <property>
+      <parse>0</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
 </xwikidoc>
