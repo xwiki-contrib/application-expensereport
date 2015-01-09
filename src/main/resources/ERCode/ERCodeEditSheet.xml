@@ -24,72 +24,80 @@
 
 (% class="xform" %)
 (((
-  ; &lt;label for="ERCode.ERCodeClass_0_label"&gt;$escapetool.xml($doc.displayPrettyName('label', false, false))&lt;/label&gt;
-  : $doc.display('label')
-  
-  (% class="clearfloats" %)((()))
-    
-  (% class="column half" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_user"&gt;$escapetool.xml($doc.displayPrettyName('user', false, false))&lt;/label&gt;
-    : $doc.display('user')
-  )))
-      
-  (% class="column half" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_organisation"&gt;$escapetool.xml($doc.displayPrettyName('organisation', false, false))&lt;/label&gt;
-    : $doc.display('organisation')
-  )))
-
-  (% class="column half" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_team"&gt;$escapetool.xml($doc.displayPrettyName('team', false, false))&lt;/label&gt;
-    : $doc.display('team')
+  (% class="row" %)
+  (((
+    (% class="col-xs-12 col-sm-12 col-md-12" %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_label"&gt;$escapetool.xml($doc.displayPrettyName('label', false, false))&lt;/label&gt;
+      : $doc.display('label')
+    )))
   )))
   
-  (% class="clearfloats" %)((()))
-      
-  (% class="column half" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_bill_date"&gt;$escapetool.xml($doc.displayPrettyName('bill_date', false, false))&lt;/label&gt;
-    : $doc.display('bill_date')
-  )))
-  
-  (% class="column half" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_client"&gt;$escapetool.xml($doc.displayPrettyName('client', false, false))&lt;/label&gt;
-    : $doc.display('client')
-  )))
-
-  (% class="clearfloats" %)((()))
-
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_total"&gt;$escapetool.xml($doc.displayPrettyName('total', false, false))&lt;/label&gt;
-    : $doc.display('total')
-  )))
-   
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_total_VAT"&gt;$escapetool.xml($doc.displayPrettyName('total_VAT', false, false))&lt;/label&gt;
-    : $doc.display('total_VAT')
+  (% class="row" %)
+  (((
+    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_bill_date"&gt;$escapetool.xml($doc.displayPrettyName('bill_date', false, false))&lt;/label&gt;
+      : $doc.display('bill_date')
+    )))
+    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_user"&gt;$escapetool.xml($doc.displayPrettyName('user', false, false))&lt;/label&gt;
+      : $doc.display('user')
+    )))
   )))
 
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_currency"&gt;$escapetool.xml($doc.displayPrettyName('currency', false, false))&lt;/label&gt;
-    : $doc.display('currency')
+  (% class="row" %)
+  (((
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_organisation"&gt;$escapetool.xml($doc.displayPrettyName('organisation', false, false))&lt;/label&gt;
+      : $doc.display('organisation')
+    )))
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_team"&gt;$escapetool.xml($doc.displayPrettyName('team', false, false))&lt;/label&gt;
+      : $doc.display('team')
+    )))
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_client"&gt;$escapetool.xml($doc.displayPrettyName('client', false, false))&lt;/label&gt;
+      : $doc.display('client')
+    )))
   )))
 
-
-  (% class="clearfloats" %)((()))
-
-
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_status"&gt;$escapetool.xml($doc.displayPrettyName('status', false, false))&lt;/label&gt;
-    : $doc.display('status')
+  (% class="row" %)
+  (((
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_total"&gt;$escapetool.xml($doc.displayPrettyName('total', false, false))&lt;/label&gt;
+      : $doc.display('total')
+    )))
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_total_VAT"&gt;$escapetool.xml($doc.displayPrettyName('total_VAT', false, false))&lt;/label&gt;
+      : $doc.display('total_VAT')
+    )))
+    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_currency"&gt;$escapetool.xml($doc.displayPrettyName('currency', false, false))&lt;/label&gt;
+      : $doc.display('currency')
+    )))
   )))
 
-  (% class="column third" %)(((
-    ; &lt;label for="ERCode.ERCodeClass_0_payment_period"&gt;$escapetool.xml($doc.displayPrettyName('payment_period', false, false))&lt;/label&gt;
+  (% class="row" %)
+  (((
+    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_status"&gt;$escapetool.xml($doc.displayPrettyName('status', false, false))&lt;/label&gt;
+      : $doc.display('status')
+    )))
+    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (((
+      ; &lt;label for="ERCode.ERCodeClass_0_payment_period"&gt;$escapetool.xml($doc.displayPrettyName('payment_period', false, false))&lt;/label&gt;
     : $doc.display('payment_period')
+    )))
   )))
-
-
-  (% class="clearfloats" %)((()))
-
 )))
 
 {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
