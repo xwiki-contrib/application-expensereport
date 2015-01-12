@@ -60,7 +60,7 @@
   <content># Class fields
 
 # Live table generic keys
-organisations.livetable.doc.title=Titre de la page
+organisations.livetable.name=Nom de l'organisation
 organisations.livetable.doc.name=Nom de la page
 organisations.livetable.doc.space=Espace
 organisations.livetable.doc.fullname=Nom complet de la page
