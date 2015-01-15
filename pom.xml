@@ -29,7 +29,7 @@
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>application-expensereport</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <name>Expense Report Application</name>
   <packaging>xar</packaging>
   <description>Supports detailed expense reports, expense type and organisation management for currency and company auto-binding</description>
@@ -37,7 +37,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/application-expensereport.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/application-expensereport.git</developerConnection>
     <url>https://github.com/xwiki-contrib/application-expensereport</url>
-    <tag>HEAD</tag>
+    <tag>application-expensereport-1.2.1</tag>
   </scm>
   <developers>
     <developer>
