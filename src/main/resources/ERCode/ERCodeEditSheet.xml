@@ -21,6 +21,7 @@
   <hidden>true</hidden>
   <content>{{velocity}}
 {{html wiki="true" clean="false"}}
+$xwiki.ssx.use("ERCode.ERCodeEditSheet")
 
 (% class="xform" %)
 (((
@@ -32,15 +33,15 @@
       : $doc.display('label')
     )))
   )))
-  
+
   (% class="row" %)
   (((
-    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (% class='col-xs-12 col-sm-6 col-md-6 column half' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_bill_date"&gt;$escapetool.xml($doc.displayPrettyName('bill_date', false, false))&lt;/label&gt;
       : $doc.display('bill_date')
     )))
-    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (% class='col-xs-12 col-sm-6 col-md-6 column half' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_user"&gt;$escapetool.xml($doc.displayPrettyName('user', false, false))&lt;/label&gt;
       : $doc.display('user')
@@ -49,17 +50,17 @@
 
   (% class="row" %)
   (((
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4 column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_organisation"&gt;$escapetool.xml($doc.displayPrettyName('organisation', false, false))&lt;/label&gt;
       : $doc.display('organisation')
     )))
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4) column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_team"&gt;$escapetool.xml($doc.displayPrettyName('team', false, false))&lt;/label&gt;
       : $doc.display('team')
     )))
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4 column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_client"&gt;$escapetool.xml($doc.displayPrettyName('client', false, false))&lt;/label&gt;
       : $doc.display('client')
@@ -68,17 +69,17 @@
 
   (% class="row" %)
   (((
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4 column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_total"&gt;$escapetool.xml($doc.displayPrettyName('total', false, false))&lt;/label&gt;
       : $doc.display('total')
     )))
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4 column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_total_VAT"&gt;$escapetool.xml($doc.displayPrettyName('total_VAT', false, false))&lt;/label&gt;
       : $doc.display('total_VAT')
     )))
-    (% class='col-xs-12 col-sm-12 col-md-4' %)
+    (% class='col-xs-12 col-sm-12 col-md-4 column third' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_currency"&gt;$escapetool.xml($doc.displayPrettyName('currency', false, false))&lt;/label&gt;
       : $doc.display('currency')
@@ -87,17 +88,18 @@
 
   (% class="row" %)
   (((
-    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (% class='col-xs-12 col-sm-6 col-md-6 column half' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_status"&gt;$escapetool.xml($doc.displayPrettyName('status', false, false))&lt;/label&gt;
       : $doc.display('status')
     )))
-    (% class='col-xs-12 col-sm-6 col-md-6' %)
+    (% class='col-xs-12 col-sm-6 col-md-6 column half' %)
     (((
       ; &lt;label for="ERCode.ERCodeClass_0_payment_period"&gt;$escapetool.xml($doc.displayPrettyName('payment_period', false, false))&lt;/label&gt;
     : $doc.display('payment_period')
     )))
   )))
+  (% class="clearfloats" %)((()))
 
 {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
 
@@ -251,6 +253,119 @@ $(function(){
     </property>
     <property>
       <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <name>ERCode.ERCodeEditSheet</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>3831270f-70f4-401b-a0e1-9f14d856f61e</guid>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.skin-flamingo .full, .skin-flamingo .half, .skin-flamingo .third {
+  padding: 0 15px;
+}</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name/>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>currentPage</use>
     </property>
   </object>
 </xwikidoc>
