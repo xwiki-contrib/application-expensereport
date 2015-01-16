@@ -47,6 +47,10 @@
     <developer>
       <name>Yann Flory</name>
     </developer>
+    <developer>
+      <id>gabrielasmeria</id>
+      <name>Gabriela Smeria</name>
+    </developer>
   </developers>
   <properties>
     <!-- Don't run CLIRR here since there's no Java code. -->
