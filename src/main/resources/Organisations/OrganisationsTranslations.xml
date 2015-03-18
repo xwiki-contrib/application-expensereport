@@ -1,28 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc version="1.1">
   <web>Organisations</web>
   <name>OrganisationsTranslations</name>
   <language/>
   <defaultLanguage/>
   <translation>0</translation>
-  <parent>OrganisationsClass</parent>
   <creator>xwiki:XWiki.Admin</creator>
+  <parent>OrganisationsClass</parent>
   <author>xwiki:XWiki.Admin</author>
-  <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1405672422000</creationDate>
   <date>1405672422000</date>
   <contentUpdateDate>1405672422000</contentUpdateDate>
   <version>1.1</version>
   <title/>
-  <defaultTemplate/>
-  <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
+  <content># Class fields
+
+# Live table generic keys
+organisations.livetable.name=Organisation name
+organisations.livetable.doc.name=Page name
+organisations.livetable.doc.space=Space
+organisations.livetable.doc.fullname=Page full name
+organisations.livetable.doc.author=Last author
+organisations.livetable.doc.creator=Creator
+organisations.livetable.doc.date=Update date
+organisations.livetable.doc.creationDate=Creation date
+organisations.livetable._avatar=Avatar
+organisations.livetable._images=Images
+organisations.livetable._attachments=Attachments
+organisations.livetable._actions=Actions
+organisations.livetable._actions.edit=Edit
+organisations.livetable._actions.delete=Delete
+organisations.livetable.emptyvalue=-
+
+# Live table specific keys</content>
   <object>
+    <name>Organisations.OrganisationsTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>56cf96d5-8a1b-4370-b7e4-1269db89bca0</guid>
     <class>
       <name>XWiki.TranslationDocumentClass</name>
       <customClass/>
@@ -49,32 +70,8 @@
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </scope>
     </class>
-    <name>Organisations.OrganisationsTranslations</name>
-    <number>0</number>
-    <className>XWiki.TranslationDocumentClass</className>
-    <guid>56cf96d5-8a1b-4370-b7e4-1269db89bca0</guid>
     <property>
-      <scope>ON_DEMAND</scope>
+      <scope>WIKI</scope>
     </property>
   </object>
-  <content># Class fields
-
-# Live table generic keys
-organisations.livetable.name=Nom de l'organisation
-organisations.livetable.doc.name=Nom de la page
-organisations.livetable.doc.space=Espace
-organisations.livetable.doc.fullname=Nom complet de la page
-organisations.livetable.doc.author=Dernier auteur
-organisations.livetable.doc.creator=Créateur
-organisations.livetable.doc.date=Date de dernière mise à jour
-organisations.livetable.doc.creationDate=Date de création
-organisations.livetable._avatar=Avatar
-organisations.livetable._images=Images
-organisations.livetable._attachments=Pièces jointes
-organisations.livetable._actions=Actions
-organisations.livetable._actions.edit=Éditer
-organisations.livetable._actions.delete=Supprimer
-organisations.livetable.emptyvalue=-
-
-# Live table specific keys</content>
 </xwikidoc>
