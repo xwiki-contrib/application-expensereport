@@ -28,7 +28,7 @@
   &lt;input type="text" required name="title" id="title" &gt;
 
   &lt;span class="buttonwrapper"&gt;
-    &lt;input class="buttonwrapper button" type="submit"/&gt;
+    &lt;input class="buttonwrapper button" type="submit" value="$services.localization.render("Expense_Type.create_button")"/&gt;
   &lt;/span&gt;
 &lt;/form&gt;
 {{/html}}

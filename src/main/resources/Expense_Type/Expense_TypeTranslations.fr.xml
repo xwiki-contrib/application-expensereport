@@ -22,6 +22,7 @@
   <content># Class fields
 Expense_Type.Expense_TypeClass_label=label
 Expense_Type.create=Ajouter un type de dépense
+Expense_Type.create_button=Ajouter un type
 
 # Live table generic keys
 expense_type.livetable.doc.title=Titre de la page
