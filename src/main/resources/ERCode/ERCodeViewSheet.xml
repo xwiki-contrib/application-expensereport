@@ -155,19 +155,6 @@
   </object>
   <content>{{velocity}}
 
-##the [[path:${doc.getURL('export')}||queryString="hello=world"]] doesn't append the query part
-{{html wiki="true"}}
-(% class="buttonwrapper" %)(((
-  &lt;a 
-    class="button" 
-    style="display: block ; padding: 10px ; font-size: 180% ; text-align: center" 
-    href="${doc.getURL('export')}?format=pdf&amp;pdfcover=0&amp;pdftoc=0&amp;comments=0&amp;attachments=0"&gt;
-      $services.localization.render("ERCode.export")
-  &lt;/a&gt;
-)))
-{{/html}}
-
-
 #if("$doc.label" != "")
   {{html wiki="true" clean="false"}}
     **&lt;label for="ERCode.ERCodeClass_0_label"&gt;$stringtool.capitalize($escapetool.xml($doc.displayPrettyName('label', false, false)))&lt;/label&gt;: ** $doc.display('label')
@@ -224,6 +211,17 @@
 #end
 
 {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
+
+##the [[path:${doc.getURL('export')}||queryString="hello=world"]] doesn't append the query part
+{{html wiki="true"}}
+(% class="buttonwrapper" %)(((
+  &lt;a
+    class="button"
+    href="${doc.getURL('export')}?format=pdf&amp;pdfcover=0&amp;pdftoc=0&amp;comments=0&amp;attachments=0"&gt;
+      $services.localization.render("ERCode.export")
+  &lt;/a&gt;
+)))
+{{/html}}
 
 {{/velocity}}</content>
 </xwikidoc>
