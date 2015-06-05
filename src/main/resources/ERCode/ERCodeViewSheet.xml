@@ -225,9 +225,5 @@
 
 {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
 
-(% class="buttonwrapper" %)(((
-  [[$services.localization.render("ercode.livetable._actions.edit")&gt;&gt;path:$xwiki.getURL($doc, 'edit')]]
-)))
-
 {{/velocity}}</content>
 </xwikidoc>
