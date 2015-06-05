@@ -15,7 +15,7 @@
   <date>1408021026000</date>
   <contentUpdateDate>1408021026000</contentUpdateDate>
   <version>1.1</version>
-  <title>Expense Report</title>
+  <title>$services.localization.render('ERCode.Space.title', [$doc.space])</title>
   <defaultTemplate/>
   <validationScript/>
   <comment/>

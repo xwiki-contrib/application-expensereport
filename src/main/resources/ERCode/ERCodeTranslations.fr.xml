@@ -22,7 +22,8 @@
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
-  <content>ERCode.Space.title=Notes de frais
+  <content>ERCode.app.title=Notes de frais
+    ERCode.Space.title=Notes de frais
 
 ERCode.title.report=Note de frais n°
 ERCode.export=Exporter la note de frais
@@ -37,6 +38,10 @@ ERCode.help.main=Expense report nécessite de paramétrer les applications Organ
 ERCode.help.organisations=Déclarez vos organisations dans l'application et ajoutez un champ organisation aux profils de vos utilisateurs.\nLa compagnie ainsi que la monnaie de chaque note de frais sera renseignée automatiquement.\n
 ERCode.help.type=Ajouter des types de dépense vous permettra une meilleure gestion de vos frais en les classant par catégorie\n
 ERCode.help.team=Ajoutez également des équipes pour permettre un autre tri de vos frais\n
+
+ERCode.help.organisations.link=Organisations
+ERCode.help.type.link=Type de dépense
+ERCode.help.team.link=Équipes
 
 # Class fields
 ERCode.ERCodeClass_label=Label
@@ -102,7 +107,7 @@ ERCode.detail.vat_euro=Montant TVA (en €)
 ERCode.detail.type=Type
 
 # Live table specific keys
-ercode.livetable.label=Label
+ercode.livetable.label=Étiquette
 ercode.livetable.user=Demandeur
 ercode.livetable.bill_date=Date de facturation
 ercode.livetable.client=Client
@@ -111,7 +116,7 @@ ercode.livetable.vat=TVA
 ercode.livetable.total=Montant
 ercode.livetable.total_VAT=TVA
 ercode.livetable.currency=Monnaie
-ercode.livetable.status=Status
+ercode.livetable.status=Statut
 ercode.livetable.details=Details
 ercode.livetable.index=Index
 ercode.livetable.payment_month=Mois de paiement

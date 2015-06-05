@@ -74,6 +74,10 @@ ERCode.help.organisations=Set your organisations in the app and add the organisa
 ERCode.help.type=Add expense types helps you to manage better your expenses by sorting them by category.\n
 ERCode.help.team=Also add teams to have a new way to sort your expenses.\n
 
+ERCode.help.organisation.link=Organisations
+ERCode.help.type.link=Expense type
+ERCode.help.team.link=Teams
+
 # Class fields
 ERCode.ERCodeClass_label=Label
 ERCode.ERCodeClass_user=Employee

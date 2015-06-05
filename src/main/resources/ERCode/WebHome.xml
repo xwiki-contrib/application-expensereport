@@ -26,11 +26,11 @@
   {{info }}
     $services.localization.render("ERCode.help.main")
 
-    $services.localization.render("ERCode.help.organisations") [[Organisations&gt;&gt;Organisations.WebHome]]
+    $services.localization.render("ERCode.help.organisations") [[$services.localization.render('ERCode.help.organisation.link')&gt;&gt;Organisations.WebHome]]
 
-    $services.localization.render("ERCode.help.type") [[Expense type&gt;&gt;Expense_Type.WebHome]]
+    $services.localization.render("ERCode.help.type") [[$services.localization.render('ERCode.help.type.link')&gt;&gt;Expense_Type.WebHome]]
 
-    $services.localization.render("ERCode.help.team") [[Teams&gt;&gt;Teams.WebHome]]
+    $services.localization.render("ERCode.help.team") [[$services.localization.render('ERCode.help.team.link')&gt;&gt;Teams.WebHome]]
   {{/info }}
 #end
 
