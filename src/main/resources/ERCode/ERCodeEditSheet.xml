@@ -193,8 +193,8 @@ $xwiki.ssx.use("ERCode.ERCodeEditSheet")
     <property>
       <code>require(['jquery'], function ($) {
 $(function(){
-  var page = $('meta[name="page"]').attr('content'),
-      namespace = $('meta[name="restURL"]').attr('content'),
+  var page = XWiki.currentDocument.page, 
+      namespace = XWiki.currentDocument.getRestURL() + "/objects/",
       $detailTable = $('#detailTable')
   ;
   if(typeof namespace === "undefined"){
