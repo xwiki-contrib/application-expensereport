@@ -101,7 +101,10 @@ $xwiki.ssx.use("ERCode.ERCodeEditSheet")
   )))
   (% class="clearfloats" %)((()))
 
-{{include reference = "ERCode.ERCodeDetailTableSheet" /}}
+  (% class="table" %)
+  (((
+    {{include reference = "ERCode.ERCodeDetailTableSheet" /}}
+  )))
 
 (% class="buttonwrapper" id="add_detail" %)(((
   [[$services.localization.render("ERCode.detail.add")&gt;&gt;path:#]]
@@ -358,6 +361,10 @@ $(function(){
     <property>
       <code>.skin-flamingo .full, .skin-flamingo .half, .skin-flamingo .third {
   padding: 0 15px;
+}
+
+.table {
+  overflow: auto;
 }</code>
     </property>
     <property>
