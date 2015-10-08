@@ -43,7 +43,7 @@ expense_type.livetable.emptyvalue=-
 
 # Live table specific keys
 expense_type.livetable.label=label</content>
-<object>
+  <object>
     <name>Expense_Type.Expense_TypeTranslations</name>
     <number>0</number>
     <className>XWiki.TranslationDocumentClass</className>
