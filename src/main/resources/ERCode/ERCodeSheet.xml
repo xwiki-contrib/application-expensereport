@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1405504573000</creationDate>
-  <date>1405584551000</date>
-  <contentUpdateDate>1405584516000</contentUpdateDate>
+  <date>1487070838000</date>
+  <contentUpdateDate>1487070838000</contentUpdateDate>
   <version>1.1</version>
   <title>$services.localization.render("ERCode.title.report") $doc.getName()</title>
   <defaultTemplate/>

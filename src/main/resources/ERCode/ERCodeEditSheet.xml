@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1407942174000</creationDate>
-  <date>1436344693000</date>
-  <contentUpdateDate>1436344693000</contentUpdateDate>
+  <date>1487159351000</date>
+  <contentUpdateDate>1487159351000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -103,27 +103,29 @@
     </property>
     <property>
       <code>require(['jquery'], function ($) {
-$(function(){
-  var page = XWiki.currentDocument.page, 
-      namespace = XWiki.currentDocument.getRestURL() + "/objects/",
+$(function() {
+  var page = XWiki.currentDocument.page,
+      namespace = XWiki.currentDocument.getRestURL(),
       $detailTable = $('#detailTable')
   ;
-  if(typeof namespace === "undefined"){
+
+  if(typeof namespace === "undefined")
     namespace = $('html').attr('data-xwiki-rest-url');
-  }
-  namespace = namespace  + "/objects/";
+  namespace += "/objects/";
 
-  function loadDetailFor(page, objectNumber){
-    var url = "/xwiki/bin/view/ERCode/ERCodeDetailSheet?page=ExpenseReport." + page + "&amp;number=" + objectNumber + "&amp;xpage=plain" ;
-    $.ajax(url).success(function(res){
+  function loadDetail(page, objectNumber) {
+    var url = "/xwiki/bin/view/ERCode/ERCodeDetailSheet?page=ExpenseReport." + page + "&amp;number=" + objectNumber + "&amp;xpage=plain";
+    $.ajax({
+      url: url,
+      dataType: "text"
+    }).success(function(res) {
+      console.log(res);
       var $res = $(res).find('tr').appendTo($detailTable).find('.datetime');
-      
       var dpicker = new XWiki.DateTimePicker($res[0], $res[0].title);
-    })
+    });
   }
 
-  $('#add_detail').click(function(e){
-
+  $('#add_detail').click(function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -131,26 +133,27 @@ $(function(){
       type: "POST",
       contentType: "application/x-www-form-urlencoded",
       accept: "application/xml",
+      dataType: "text", // keep this to prevent jQuery from double parsing
       data: "className=ERCode.ERCodeDetailClass",
-    }).success(function(res){
-
+    }).success(function(res) {
+      //console.log(res);
       var objectNumber = $(res).find('number').text();
-      loadDetailFor(page, objectNumber);
-
+      loadDetail(page, objectNumber);
     });
-
   });
 
-  $(document).on("click", ".xobject-action.delete", function(e){
+  $(document).on("click", ".xobject-action.delete", function(e) {
     e.preventDefault();
 
     var $parent = $(this).closest('tr');
     var id = $(this).attr('data-id');
 
+    console.log("delete " + id);
+
     $.ajax({
       url: namespace + "ERCode.ERCodeDetailClass/" + id + "?method=DELETE",
       type: 'DELETE'
-    }).success(function(){
+    }).success(function() {
       $parent.remove();
     })
 
@@ -381,6 +384,5 @@ $xwiki.ssx.use("ERCode.ERCodeEditSheet")
 )))
 
 {{/html}}
-{{/velocity}}
-</content>
+{{/velocity}}</content>
 </xwikidoc>

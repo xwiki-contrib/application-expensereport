@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc version="1.1">
+<xwikidoc version="1.2" reference="Expense_Type.Expense_TypeTranslations" locale="fr">
   <web>Expense_Type</web>
   <name>Expense_TypeTranslations</name>
   <language>fr</language>
