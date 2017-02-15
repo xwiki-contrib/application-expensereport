@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc reference="ERCode.ERCodeClass" locale="">
   <web>ERCode</web>
   <name>ERCodeClass</name>
   <language/>

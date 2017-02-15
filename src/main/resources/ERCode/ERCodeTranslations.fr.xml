@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc reference="ERCode.ERCodeTranslations" locale="fr">
   <web>ERCode</web>
   <name>ERCodeTranslations</name>
   <language>fr</language>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc reference="ERCode.ERCodeTranslations" locale="">
   <web>ERCode</web>
   <name>ERCodeTranslations</name>
   <language/>
@@ -42,7 +42,7 @@
         <prettyName>Scope</prettyName>
         <relationalStorage>0</relationalStorage>
         <separator> </separator>
-        <separators> ,|</separators>
+        <separators>|, </separators>
         <size>1</size>
         <unmodifiable>0</unmodifiable>
         <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
